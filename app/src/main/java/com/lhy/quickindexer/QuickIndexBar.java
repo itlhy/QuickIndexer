@@ -25,7 +25,6 @@ public class QuickIndexBar extends View {
             "S", "T", "U", "V", "W", "X",
             "Y", "Z"
     };
-
     private Paint paint;//画笔
     private float mHeight;//每个字母所占用空间的高度(比字母本身高度大)
     private float mWidth;//每个字母所占用空间的宽度(比字母本身宽度大)
@@ -112,6 +111,7 @@ public class QuickIndexBar extends View {
 
     public interface OnLetterUpdateListener {
         void onLetterUpdate(String letter);
+
         void onHiddenLetter();//隐藏
     }
 }
